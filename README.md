@@ -45,8 +45,8 @@ Model klasifikasi dibangun untuk membedakan dua jenis peralatan makan: Piring da
 
 |        | Pred Piring | Pred Gelas |
 |--------|-------------|------------|
-| Piring | 49          | 1          |
-| Gelas  | 2           | 48         |
+| Piring | 100         | 0          |
+| Gelas  | 0           | 100        |
 
 - Classification Report: Precision, Recall, dan F1-Score di atas 0.95 untuk kedua kelas
 - Visualisasi:
