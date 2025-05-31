@@ -14,16 +14,16 @@ Model klasifikasi dibangun untuk membedakan dua jenis peralatan makan: Piring da
 
 ## 🧠 Arsitektur Model
 
-- **Base Model**: MobileNetV2 (tanpa top layer, `include_top=False`)
-- **Strategi**:
+- Base Model: MobileNetV2 (tanpa top layer, `include_top=False`)
+- Strategi:
   - Layer pretrained dibekukan (`freeze`)
   - Ditambahkan layer:
     - `GlobalAveragePooling2D`
     - `Dense(64, activation='relu')`
     - `Dense(1, activation='sigmoid')`
-- **Loss Function**: Binary Crossentropy
-- **Optimizer**: Adam
-- **Metrics**: Accuracy
+- Loss Function: Binary Crossentropy
+- Optimizer: Adam
+- Metrics: Accuracy
 
 ## Dataset
 
@@ -45,8 +45,8 @@ Model klasifikasi dibangun untuk membedakan dua jenis peralatan makan: Piring da
 
 |        | Pred Piring | Pred Gelas |
 |--------|-------------|------------|
-| Piring | 100         | 0          |
-| Gelas  | 0           | 100        |
+| Piring | 20       | 0          |
+| Gelas  | 0           | 20      |
 
 - Classification Report: Precision, Recall, dan F1-Score di atas 0.95 untuk kedua kelas
 - Visualisasi:
